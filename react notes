@@ -1,0 +1,73 @@
+                                                 <--- react notes --->
+
+# how to set up react
+
+1. npx create-react-app project_name // slow process
+   npm create vite@latest // recommended
+2. cmd: npm i ---> it will install some other usefull packages, node_module, and update package.json
+
+
+   
+# benifit of react
+we can write html tags through js easily which gives html programming capabilities
+
+
+
+
+<----- RULES OF REACT LIBRARY ----->
+
+# A React component must return a single parent element, thats why we use fragements <></>
+# React component names must start with a capital letter
+# in vite always use jsx instead of using js in file naming
+
+
+
+<----- HOOKS ----->
+we use hooks to update ui/ux on many places at one on frontend
+instead of using ex: let count - 0;
+use hooks: let [count, setCoutner] = useState(default value)
+wherever u want to update counter just write setCounter(updated value)
+refrence: vitereact02
+
+1. useCallback(fn, dependencies) --> we can cached a function definations btw renders (react compiler will automatically memorize the function values)
+2.  
+
+
+
+<----- TAILWIND CSS SETUP IN REACT PROJECT ----->
+1. first create react project by npm create vite@latest ---> setup proejct ---> cd: project_name
+2. npm install -D tailwindcss postcss autoprefixer ---> npm install -D tailwindcss@3.4.17
+3. npx tailwindcss init -p ---> it will create a file names tailwind.confi.js u just have to copy paste this code:
+
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+}
+
+4. in project dr ---> src ---> index.css ---> paste this :
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+5. then npm run dev and u r ready to go
+
+
+<----- PROPS -----> 
+props make components reuseable
+# component k function me props variable de do
+# aur jo b tum app.jsx me component k code me jo b argument pass karoge wo as a obj names props pass hoga
+# then u can take values from props ex: props.username, props.age
+# hm direct argument me props k bina username daal skte h
+
+
+
+
+

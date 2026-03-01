@@ -1,0 +1,19 @@
+body {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    
+}
+
+#popup {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: black;
+      color: white;
+      padding: 12px 20px;
+      border-radius: 8px;
+      display: none;
+}
